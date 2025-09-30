@@ -145,6 +145,8 @@ Lift: 2.69
 >👉 Chutney works well as part of a fuller meal combo.
 
 ### Business Implications
-🛒 Upselling: When mango chutney is ordered, suggest plain papadum (confidence 86%) or naan (confidence 40,49%), pilau rice (confidence 49,93%), mint sauce (confidence 32,58%) or red sauce (confidence 21,51%).
+🛒 Cross-selling: When mango chutney is ordered, suggest plain papadum (confidence 86%) or naan (confidence 40,49%), pilau rice (confidence 49,93%), mint sauce (confidence 32,58%) or red sauce (confidence 21,51%).
 
-📊 Marketing: Promote chutney-based combos in ads, like mango chutney + pilau rice + plain papadum.
+📊 Marketing: Promote chutney-based combos in ads, like mango chutney + pilau rice + plain papadum. Something like this:
+
+<img src="visuals/menu_deal_mango_chutney.png" width="200" height="400">
