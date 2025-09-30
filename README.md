@@ -21,6 +21,18 @@ lots of code
 
 ## Single-dish Deep Dive
 
+<details><summary>Support Matrix (Tableau dasboard screenshot)</summary>
+<img src="visuals/mango_chutney_support_matrix.png" width="500" height="300">
+</details>
+
+<details><summary>Lift Matrix (Tableau dasboard screenshot)</summary>
+<img src="visuals/mango_chutney_lift_matrix.png" width="500" height="300">
+</details>
+
+<details><summary>Association rules table (Tableau dasboard screenshot)</summary>
+<img src="visuals/mango_chutney_associations_rules_dashboard.png" width="500" height="300">
+</details>
+
 
 <details>
 <summary>Apriori sorted by Lift</summary>
