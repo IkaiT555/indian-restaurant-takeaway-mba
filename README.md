@@ -77,7 +77,13 @@ The core MBA metrics used in this project are:
    - Lift > 1 means the items are positively associated (they appear together more often than chance). And item Y is likely to be bought if item X is alredy bought.
    - Lift = 1 implies no association between items.
    - Lift < 1 means the items are negativity associated. Item Y is unlikely to be bought if item X is bought.
-
+### 🔧Tools Used
+- Python
+  
+  I used Python for data preparation and rules mining because it is flexible, fast, and gives full control over cleaning and transformation steps. With libraries like `pandas` for preprocessing and `efficient-apriori` for association rules, I could structure the dataset exactly as needed and generate successfu results.
+- Tableau
+ 
+  For visualization, I used Tableau because it’s highly interactive and much easier for non-technical stakeholders to explore. Dashboards with metrics like support, confidence, and lift are more intuitive in Tableau than in raw Python output.
 
 ## 📑Data Preparation
 Main Files: 
