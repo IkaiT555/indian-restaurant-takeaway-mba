@@ -37,8 +37,17 @@ lots of code
 
 ## Repository Structure
 
+- `data/raw/` — original CSV (unmodified)
+- `data/processed/` — cleaned/prepared data ready for MBA
+- `visuals/` —  screenshots od dashboards and ad-style promotional suggestions
+- `tableau/` — Tableau packaged workbooks
+- `notebooks/` — ipynb files for data preparation and apriori rules mining
+
 ## Data
 
+Source: [Brazilian E-Commerce Public Dataset by Olist.](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data)
+
+Orders made at [Olist store](https://www.olist.com/) (Brazil) in 2016 to 2018. Collection methodology: Random Sampling.
 ## Overview
 
 ## Data Preparation
