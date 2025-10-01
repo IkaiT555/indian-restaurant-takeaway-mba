@@ -43,7 +43,7 @@ lots of code
 - `tableau/` — Tableau packaged workbooks
 - `notebooks/` — ipynb files for data preparation and apriori rules mining
 
-## Data
+##  🔡Data
 
 Source: [Indian Restaurant Takeaway Food Orders.](https://www.kaggle.com/datasets/henslersoftware/19560-indian-takeaway-orders/data?select=restaurant-2-orders.csv) (Version 4) 
 
@@ -52,11 +52,11 @@ Contains:
 - Rows ~120k
 - 272 unique items after cleaning
 
-## Overview
+## 📃Overview
 
-## Data Preparation
+## 📑Data Preparation
 
-## Analysis Methods
+## 📊Analysis Methods
 Apriori algorithm, Tableau visualizations.
 
 ## 🥭Single-dish Deep Dive
@@ -176,10 +176,12 @@ Lift: 2.69
 <img src="visuals/menu_deal_mango_chutney.png" width="200" height="400">
 
 
-## Key Insights
+## 💡Key Insights
+
+## ➡️Next Step
 
 Top dish pairs, multi-dish rules, support/confidence/lift findings.
 
-## Recommendations
+## 📝Recommendations
 
 e.g., “Bundle naan + pilau rice”, “Promote papadum + chutney as starter set”.
