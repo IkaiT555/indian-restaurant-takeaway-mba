@@ -66,13 +66,18 @@ MBA is a technique from data mining used to identify associations between items 
 The core MBA metrics used in this project are:
 
 - Support – how frequently an item or itemset appears in the dataset.
-Example: “Pilau rice” is in 30% of all orders → support = 0.30
+  
+   Example: “pilau rice” is in 30% of all orders → support = 0.3.
 
 - Confidence – given that a customer ordered item A, how likely are they to also order item B?
-Example: If 70% of orders with “naan” also include “pilau rice”, then confidence(naan → pilau rice) = 0.70.
+  
+   Example: If 70% of orders with “naan” also include “pilau rice”, then confidence(naan → pilau rice) = 0.7.
 
-Lift – how much more likely items are to appear together compared to if they were independent.
-Lift > 1 means the items are positively associated (they appear together more often than chance).
+- Lift – how much more likely items are to appear together compared to if they were independent.
+   - Lift > 1 means the items are positively associated (they appear together more often than chance). And item Y is likely to be bought if item X is alredy bought.
+   - Lift = 1 implies no association between items.
+   - Lift < 1 means the items are negativity associated. Item Y is unlikely to be bought if item X is bought.
+
 
 ## 📑Data Preparation
 Main Files: 
@@ -122,8 +127,9 @@ Apriori algorithm, Tableau visualizations.
 
 ### Overview
 
-Mango chutney is a popular condiment, appearing in 17.47% of all orders (for comparison, pilau rice — the most popular dish — appears in 42.58%).
 This section shows how the project provides insights into the performance and associations of one specific dish across Tableau dashboards and Apriori algorithm outputs.
+
+Mango chutney is a popular condiment, appearing in 17.47% of all orders (for comparison, pilau rice — the most popular dish — appears in 42.58%).
 
 ### Tableau Dashboards
 
@@ -236,11 +242,22 @@ Lift: 2.69
 
 
 ## 💡Key Insights
->👉 Great variety of dishes is clearly underappreciated by customers. More than half of the menu support is under 1% → is a direct sign for menu simplification.
+- Great variety of dishes is clearly underappreciated by customers. More than half of the menu support is under 1% → is a direct sign for menu simplification.
+
+- The maximum support reaches about 17%. Since the menu is large and this is real-world data, it is uncommon to see very high support values (such as 50% - items rarely dominate half of all orders).
+
+- There are some huge numbers of lift, like for: 
+   - (malaya prawn, methi prawn) 3276.3
+   - (methi prawn, pathia prawn) 1638.2
+
+   These values are caused by very rare pairs (only 2 orders each).Lift explodes when both items are extremely uncommon but happen to occur together a couple of times. This is why minimum support filter was applied in Tableau dashboards and in apriori algorithm.
+
 
 ## ➡️Next Step
 
-Top dish pairs, multi-dish rules, support/confidence/lift findings.
+The goal of the analysis was a menu-level MBA (like “what dishes tend to be ordered together”). But the same can be made for catagory-level, by uniting dishes into categories. 
+
+Segmentation can be: appetizers,main courses, etc.; vegetarian vs meat; weekday vs weekend.
 
 ## 📝Recommendations
 
