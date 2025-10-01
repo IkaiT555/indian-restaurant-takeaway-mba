@@ -43,9 +43,14 @@ lots of code
 - `tableau/` — Tableau packaged workbooks
 - `notebooks/` — ipynb files for data preparation and apriori rules mining
 
+> [!NOTE]
+> My Tableau workbooks are also published on Tableau Public
+[Part 1](https://public.tableau.com/views/Indian_Takeaway_MBA_1/MBAPart1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Part 2](https://public.tableau.com/views/Indian_Takeaway_MBA_2/MBA-Part2?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ## 🔡Data
 
-Source: [Indian Restaurant Takeaway Food Orders.](https://www.kaggle.com/datasets/henslersoftware/19560-indian-takeaway-orders/data?select=restaurant-2-orders.csv) (Version 4) 
+Source: [Indian Restaurant Takeaway Food Orders](https://www.kaggle.com/datasets/henslersoftware/19560-indian-takeaway-orders/data?select=restaurant-2-orders.csv) (Version 4) 
 
 Contains:
 - Orders ~20k
@@ -53,6 +58,21 @@ Contains:
 - 272 unique items (after cleaning)
 
 ## 📃Overview
+
+This project explores Market Basket Analysis (MBA) or Association Rules Mining using real restaurant order data (~20,000 transactions from an Indian takeaway). The goal is to uncover hidden patterns in how dishes are ordered together and to use these insights for menu optimization and marketing strategies.
+
+MBA is a technique from data mining used to identify associations between items in transactional data. For restaurants, this means finding which dishes are commonly ordered together and which items are rarely chosen.
+
+The core MBA metrics used in this project are:
+
+- Support – how frequently an item or itemset appears in the dataset.
+Example: “Pilau rice” is in 30% of all orders → support = 0.30
+
+- Confidence – given that a customer ordered item A, how likely are they to also order item B?
+Example: If 70% of orders with “naan” also include “pilau rice”, then confidence(naan → pilau rice) = 0.70.
+
+Lift – how much more likely items are to appear together compared to if they were independent.
+Lift > 1 means the items are positively associated (they appear together more often than chance).
 
 ## 📑Data Preparation
 Main Files: 
