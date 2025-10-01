@@ -45,9 +45,13 @@ lots of code
 
 ## Data
 
-Source: [Brazilian E-Commerce Public Dataset by Olist.](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data)
+Source: [Indian Restaurant Takeaway Food Orders.](https://www.kaggle.com/datasets/henslersoftware/19560-indian-takeaway-orders/data?select=restaurant-2-orders.csv) (Version 4) 
 
-Orders made at [Olist store](https://www.olist.com/) (Brazil) in 2016 to 2018. Collection methodology: Random Sampling.
+Contains:
+- Orders ~20k
+- Rows ~120k
+- 272 unique items after cleaning
+
 ## Overview
 
 ## Data Preparation
