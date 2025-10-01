@@ -43,18 +43,53 @@ lots of code
 - `tableau/` — Tableau packaged workbooks
 - `notebooks/` — ipynb files for data preparation and apriori rules mining
 
-##  🔡Data
+## 🔡Data
 
 Source: [Indian Restaurant Takeaway Food Orders.](https://www.kaggle.com/datasets/henslersoftware/19560-indian-takeaway-orders/data?select=restaurant-2-orders.csv) (Version 4) 
 
 Contains:
 - Orders ~20k
 - Rows ~120k
-- 272 unique items after cleaning
+- 272 unique items (after cleaning)
 
 ## 📃Overview
 
 ## 📑Data Preparation
+Files: 
+- [Raw data](data/raw/restaurant-2-orders.csv) → [Processed data](data/processed/takeaway_orders.csv)
+- [Notebook](notebooks/MBA_takaway_data_prep.ipynb)
+
+**Main Steps**:
+1. **Load data & Get familiar with it**
+   
+   Columns: `Order ID`, `Order Date`, `Item Name`, `Quantity`, `Product Price`, `Total products`. Checked for missing values. Calculated total number of orders: 19658.
+3. **Standaraze Dish Names**
+   
+   Many dishes were the same item written slightly differently. I normalized names to reduce noise:
+   - fixed common misspellings and naming variants
+   - unified hyphens/dashes and spaces
+   - lowercased/consistent casing
+   This reduced the menu from ~337 raw variants to 272 clean, unique dish names.
+
+5. **Consolidate duplicates within an order**
+
+   Some orders had the same dish repeated across multiple lines. I grouped by (Order ID, Item Name) and summed quantities so each dish appears once per order with its total Quantity.
+
+7.  **Verify data suitability**
+
+   Most orders (> 97%) include at least two items. If the majority of orders were with a single product, association mining would be meaninglessness.
+
+   Distribution of basket size: Quartiles: Q1 = 4, median = 6, Q3 = 8, max = 29. Most orders contain 3–8 items, which is good for finding co-occurrences.
+
+8. **Choose a support threshold for analysis**
+
+   - The dataset has ~20,000 orders, so 1% support ≈ 200 orders.
+
+   - Only 114 dishes appear in ≥ 1% of all orders. This means over half of the menu is rarely chosen.
+
+   - I’ll use 1% as the minimum support for Apriori and also as a practical line for menu optimization (low-support items are [candidates to remove/replace](data/processed
+/unpopular_items.cs)).
+
 
 ## 📊Analysis Methods
 Apriori algorithm, Tableau visualizations.
