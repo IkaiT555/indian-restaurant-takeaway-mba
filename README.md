@@ -83,11 +83,11 @@ Main Files:
 
 9. **Choose a support threshold for analysis**
 
-   - The dataset has ~20,000 orders, so 1% support ≈ 200 orders.
+   - The dataset has ~20,000 orders, so 1% support ≈ 200 orders. Will keep results meaningful.
 
    - Only 114 dishes appear in ≥ 1% of all orders. This means over half of the menu is rarely chosen.
 
-   - I’ll use 1% as the minimum support for Apriori and Tableau Dashboards. Also it is as a practical line for menu optimization (extremely low-support items are [candidates to remove/replace](data/processed/unpopular_items.csv)).
+   - I’ll use 1% as the minimum support for Apriori and Tableau Dashboards. Also it is as a practical line for menu optimization (extremely low-support items are [candidates to remove/replace](data/processed/unpopular_items.csv)). 
 
 10. **Export the cleaned dataset**
 
@@ -216,6 +216,7 @@ Lift: 2.69
 
 
 ## 💡Key Insights
+>👉 Great variety of dishes is clearly underappreciated by customers. More than half of the menu support is under 1% → is a direct sign for menu simplification.
 
 ## ➡️Next Step
 
