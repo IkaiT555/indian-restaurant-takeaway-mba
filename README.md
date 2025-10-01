@@ -35,6 +35,17 @@ lots of code
 
 :mango:
 
+## Repository Structure
+
+## Data
+
+## Overview
+
+## Data Preparation
+
+## Analysis Methods
+Apriori algorithm, Tableau visualizations.
+
 ## 🥭Single-dish Deep Dive
 
 ### Overview
@@ -150,3 +161,12 @@ Lift: 2.69
 📊 Marketing: Promote chutney-based combos in ads, like mango chutney + pilau rice + plain papadum. Something like this:
 
 <img src="visuals/menu_deal_mango_chutney.png" width="200" height="400">
+
+
+## Key Insights
+
+Top dish pairs, multi-dish rules, support/confidence/lift findings.
+
+## Recommendations
+
+e.g., “Bundle naan + pilau rice”, “Promote papadum + chutney as starter set”.
