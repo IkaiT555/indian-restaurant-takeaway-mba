@@ -55,7 +55,7 @@ Contains:
 ## 📃Overview
 
 ## 📑Data Preparation
-Files: 
+Main Files: 
 - [Raw data](data/raw/restaurant-2-orders.csv) → [Processed data](data/processed/takeaway_orders.csv)
 - [Notebook](notebooks/MBA_takaway_data_prep.ipynb)
 
@@ -76,19 +76,23 @@ Files:
    Some orders had the same dish repeated across multiple lines. I grouped by (Order ID, Item Name) and summed quantities so each dish appears once per order with its total Quantity.
 
 7.  **Verify data suitability**
+   
+    Most orders (> 97%) include at least two items. If the majority of orders were with a single product, association mining would be       meaninglessness.
+    
+    Distribution of basket size: Quartiles: Q1 = 4, median = 6, Q3 = 8, max = 29. Most orders contain 3–8 items, which is good for finding co-occurrences.
 
-   Most orders (> 97%) include at least two items. If the majority of orders were with a single product, association mining would be meaninglessness.
-
-   Distribution of basket size: Quartiles: Q1 = 4, median = 6, Q3 = 8, max = 29. Most orders contain 3–8 items, which is good for finding co-occurrences.
-
-8. **Choose a support threshold for analysis**
+9. **Choose a support threshold for analysis**
 
    - The dataset has ~20,000 orders, so 1% support ≈ 200 orders.
 
    - Only 114 dishes appear in ≥ 1% of all orders. This means over half of the menu is rarely chosen.
 
-   - I’ll use 1% as the minimum support for Apriori and also as a practical line for menu optimization (low-support items are [candidates to remove/replace](data/processed
-/unpopular_items.cs)).
+   - I’ll use 1% as the minimum support for Apriori and Tableau Dashboards. Also it is as a practical line for menu optimization (extremely low-support items are [candidates to remove/replace](data/processed/unpopular_items.csv)).
+
+10. **Export the cleaned dataset**
+
+    I saved the final transactional table as [takeaway_orders.csv](data/processed/takeaway_orders.csv) with three columns:
+   `Order ID`, `Item Name`, `Quantity`. 
 
 
 ## 📊Analysis Methods
