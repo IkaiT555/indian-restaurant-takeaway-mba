@@ -100,6 +100,7 @@ Main Files:
    - fixed common misspellings and naming variants
    - unified hyphens/dashes and spaces
    - lowercased/consistent casing
+     
    This reduced the menu from ~337 raw variants to 272 clean, unique dish names.
 
 5. **Consolidate duplicates within an order**
@@ -118,7 +119,7 @@ Main Files:
 
    - Only 114 dishes appear in ≥ 1% of all orders. This means over half of the menu is rarely chosen.
 
-   - I’ll use 1% as the minimum support for Apriori and Tableau Dashboards. Also it is as a practical line for menu optimization (extremely low-support items are [candidates to remove/replace](data/processed/unpopular_items.csv)). 
+   - I’ll use 1% as the minimum support for Apriori and Tableau Dashboards. Also it is a practical line for menu optimization (extremely low-support items are [candidates to remove/replace](data/processed/unpopular_items.csv)). 
 
 10. **Export the cleaned dataset**
 
