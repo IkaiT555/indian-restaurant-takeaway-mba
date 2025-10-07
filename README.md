@@ -69,7 +69,7 @@ The core MBA metrics used in this project are:
   
    Example: “pilau rice” is in 30% of all orders → support = 0.3.
 
-- Confidence – given that a customer ordered item A, how likely are they to also order item B?
+- Confidence – given that a customer ordered item X, how likely are they to also order item Y?
   
    Example: If 70% of orders with “naan” also include “pilau rice”, then confidence(naan → pilau rice) = 0.7.
 
