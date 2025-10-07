@@ -262,6 +262,15 @@ Lift: 2.69
 
 
 ## 💡Key Insights
+
+- <details><summary>Dataset Overview (Tableau dasboard screenshot)</summary>
+  <img src="visuals/dataset_overview.png" width="500" height="300">
+  </details>
+  
+    - The dataset contains 19658 orders. Most orders have between 3 and 8 dishes.
+
+    - Top 5 dishes are classic ones: plain papadum, pilau rice, naan, garlic naan, bombay aloo.
+
 - Great variety of dishes is clearly underappreciated by customers. More than half of the menu support is under 1% → is a direct sign for menu simplification.
 
 - The maximum support reaches about 17%. Since the menu is large and this is real-world data, it is uncommon to see very high support values (such as 50% - items rarely dominate half of all orders).
