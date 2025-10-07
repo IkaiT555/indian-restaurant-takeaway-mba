@@ -266,7 +266,9 @@ Lift: 2.69
   <img src="visuals/dataset_overview.png" width="500" height="300">
   </details>
   
-    - The dataset contains 19658 orders. Most orders have between 3 and 8 dishes.
+    - The dataset contains 19658 orders.
+      
+    - Since orders average 5–6 dishes, packaging and kitchen workflow should be optimized for multi-dish preparation & staff can anticipate peak combinations for efficiency.
 
     - Top 5 dishes are classic ones: plain papadum, pilau rice, naan, garlic naan, bombay aloo.
 
