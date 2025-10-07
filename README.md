@@ -137,8 +137,9 @@ Mango chutney is a popular condiment, appearing in 17.47% of all orders (for com
 
 ### Tableau Dashboards
 
-In [Part 1 (Tableau workbook)](tableau/Indian_Takeaway_MBA_1.twbx) you can explore the Frequency, Support, and Lift Matrices. These matrices are symmetrical, so to avoid redundancy I only kept the lower half.
-The use of color highlights the strongest associations, making patterns easy to spot at a glance.
+In [Part 1 (Tableau workbook)](tableau/Indian_Takeaway_MBA_1.twbx) you can explore the Frequency, Support, and Lift Matrices. Each cell represents a rule (Dish A → Dish C).
+
+These matrices are symmetrical, so to avoid redundancy I only kept the lower half. The use of color highlights the strongest associations, making patterns easy to spot at a glance.
 
 <details><summary>Support Matrix (Tableau dasboard screenshot)</summary>
 <img src="visuals/mango_chutney_support_matrix.png" width="500" height="300">
@@ -148,7 +149,9 @@ The use of color highlights the strongest associations, making patterns easy to 
 <img src="visuals/mango_chutney_lift_matrix.png" width="500" height="300">
 </details>
 
-In [Part 2 (Tableau workbook)](tableau/Indian_Takeaway_MBA_2.twbx) you can filter by Antecedent/Consequent dish and sort by Frequency, Support, Confidence, or Lift, which allows quick comparisons between different rules.
+[Part 2 (Tableau workbook)](tableau/Indian_Takeaway_MBA_2.twbx) is a detailed rules table that focuses on the selected dish and present the numbers in a clear, textual format.
+
+You can filter by Antecedent/Consequent dishes and sort by Frequency, Support, Confidence, or Lift, which allows quick comparisons between different rules.
 <details><summary>Association rules table (Tableau dasboard screenshot)</summary>
 <img src="visuals/mango_chutney_associations_rules_dashboard.png" width="500" height="300">
 </details>
