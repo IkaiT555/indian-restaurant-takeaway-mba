@@ -260,8 +260,7 @@ Lift: 2.69
 
 <img src="visuals/menu_deal_mango_chutney.png" width="200" height="400">
 
-
-## 💡Key Insights
+## 💡General Insights
 
 - <details><summary>Dataset Overview (Tableau dasboard screenshot)</summary>
   <img src="visuals/dataset_overview.png" width="500" height="300">
@@ -281,13 +280,33 @@ Lift: 2.69
 
    These values are caused by very rare pairs (only 2 orders each).Lift explodes when both items are extremely uncommon but happen to occur together a couple of times. This is why minimum support filter was applied in Tableau dashboards and in apriori algorithm.
 
+## 📝Recommendations
+
+To see pair-wise associations overall and compare them, you can use two scatterplots: 
+<details><summary>Scatter plot of Lift vs Support (Tableau dasboard screenshot)</summary>
+<img src="visuals/scatter_plot_lift_support.png" width="500" height="300">
+</details>
+
+<details><summary>Scatter plot of Confidence vs Support (Tableau dasboard screenshot)</summary>
+<img src="visuals/scatter_plot_confidence_support.png" width="500" height="300">
+</details>
+
+Each point represents one association rule, with x-axis for Support and y-axis for Lift or Confidence accordingly.
+
+If needed, you can add extra content beyond pairs using Apriori algorithm. My best findings are presented below.
+
+### 📒Menu suggestions
+
+
+
+### 📺Promotions suggestions
+
+
+e.g., “Bundle naan + pilau rice”, “Promote papadum + chutney as starter set”.
+
 
 ## ➡️Next Step
 
 The goal of the analysis was a menu-level MBA (like “what dishes tend to be ordered together”). But the same can be made for catagory-level, by uniting dishes into categories. 
 
 Segmentation can be: appetizers,main courses, etc.; vegetarian vs meat; weekday vs weekend.
-
-## 📝Recommendations
-
-e.g., “Bundle naan + pilau rice”, “Promote papadum + chutney as starter set”.
