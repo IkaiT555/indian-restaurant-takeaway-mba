@@ -151,7 +151,20 @@ These matrices are symmetrical, so to avoid redundancy I only kept the lower hal
 
 [Part 2 (Tableau workbook)](tableau/Indian_Takeaway_MBA_2.twbx) is a detailed rules table that focuses on the selected dish and present the numbers in a clear, textual format.
 
-You can filter by Antecedent/Consequent dishes and sort by Frequency, Support, Confidence, or Lift, which allows quick comparisons between different rules.
+Each row represents one association rule (Dish A → Dish C). For every rule, the table displays:
+
+- P(A) — % of orders that contain the antecedent dish
+
+- P(C) — % of orders that contain the consequent dish
+
+- Support — % of orders that contain both dishes together
+
+- Confidence — probability that Dish C is ordered given Dish A
+
+- Lift — how much more likely the two dishes appear together compared to chance
+
+You can filter by Antecedent/Consequent dishes and sort by any metric above, which allows quick comparisons between different rules.
+
 <details><summary>Association rules table (Tableau dasboard screenshot)</summary>
 <img src="visuals/mango_chutney_associations_rules_dashboard.png" width="500" height="300">
 </details>
