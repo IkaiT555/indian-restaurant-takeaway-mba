@@ -146,6 +146,8 @@ Some insights:
    >👉 This combination is statistically interesting but too rare to matter commercially.
 
 ### Apriori Algorithm Results
+[Notebook](notebooks/Apriori_Algorithm.ipynb)
+
 Unlike Tableau (limited to pairs), Apriori provides rules with 2–5 items.
 
 <details>
