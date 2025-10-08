@@ -1,40 +1,6 @@
 # indian-restaurant-takeaway-mba
 Market Basket Analysis on 20k Indian takeaway orders — Python preprocessing, Apriori rules, Tableau dashboards, business insights.
 
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-`code`
-
-```
-lots of code
-```
->Higlight something
-
-<details><summary>Toggle me!</summary>Peek a boo!</details>
-
-<details open>
-<summary>Shopping list</summary>
-
-* Vegetables
-* Fruits
-* Fish
-
-</details>
-
-:mango:
-
 ## Repository Structure
 
 - `data/raw/` — original CSV (unmodified)
@@ -273,6 +239,7 @@ Lift: 2.69
     - Top 5 dishes are classic ones: plain papadum, pilau rice, naan, garlic naan, bombay aloo.
 
 - Great variety of dishes is clearly underappreciated by customers. More than half of the menu support is under 1% → is a direct sign for menu simplification.
+    >👉 Keep the top 100–120 dishes. Reconsider the bottom 150: combine similar ones, simplify variants, or phase out very low-demand items.
 
 - The maximum support reaches about 17%. Since the menu is large and this is real-world data, it is uncommon to see very high support values (such as 50% - items rarely dominate half of all orders).
 
@@ -282,7 +249,7 @@ Lift: 2.69
 
    These values are caused by very rare pairs (only 2 orders each).Lift explodes when both items are extremely uncommon but happen to occur together a couple of times. This is why minimum support filter was applied in Tableau dashboards and in apriori algorithm.
 
-## 📝Recommendations
+## 📝Key Findings & Recommendations
 
 To see pair-wise associations overall and compare them, you can use two scatterplots: 
 <details><summary>Scatter plot of Lift vs Support (Tableau dasboard screenshot)</summary>
@@ -297,15 +264,44 @@ Each point represents one association rule, with x-axis for Support and y-axis f
 
 If needed, you can add extra content beyond pairs using Apriori algorithm. My best findings are presented below.
 
-### 📒Menu suggestions
+### 📒Findings
 
+1. **Core Meal Patterns**
+   
+Naan + Pilau Rice occur in 17.8% of all orders — the most stable and popular combination (lift = 1.5).
+Plain Papadum + Pilau Rice follows with 16.5%, and Naan + Pilau Rice + Plain Papadum (7.5%) forms the most natural three-item bundle.
+>👉 Offer these as “Popular Meal Sets” or “Family Combos” to simplify customer choices.
 
+2. **Flatbread & Sauce Pairings**
+   
+Strong associations exist between papadum and condiments:
 
-### 📺Promotions suggestions
+- Mint sauce + Plain papadum + Mango chutney (lift = 2.7). If customer has mint or mango condiment to their flatbread, they will take second condiment in more than 35% cases.
 
+- Onion chutney + Plain papadum + Mango chutney (lift = 3.6). Customers who choose onion chutney with papadums tend to add mango chutney in over 60% of cases, showing clear complementary preferences.
+>👉 Present “Papadum & Dips Trio” (mint, mango, onion chutney) as a ready-made starter bundle — proven pattern in data.
 
-e.g., “Bundle naan + pilau rice”, “Promote papadum + chutney as starter set”.
+3. **Naan patterns**
+   
+Orders with naan frequently include curries (korma, madras, chicken tikka).
+>👉 Make online system suggest naan when curry is chosen, or vice versa.
 
+Garlic naan pairs strongly with pilau rice and meat dishes and bhaji.
+>👉 Add an “Upgrade to Garlic Naan & Rice & Chiken” option.
+
+5. **Rare but Strong Dish Associations**
+   
+Chicken chaat (main) → Bombay aloo — rare combo, but unusually strong compared to random chance(lift = 3.3). Niche but powerful insight. 
+Customers that have chicken chaat in order with almost 70% chance to will get bombay aloo in it too, but not vice versa.
+>👉 Suggest Bombay Aloo automatically when customers order Chicken Chaat.
+
+Other similar cases are:
+-  Keema rice + Keema naan (lift = 3.0) — a loyal but niche customer pattern.
+-  Peshwari naan + Korma (lift ≈ 2.0) — sweet naan fits well with mild curries.
+-  Lime pickle + Plain papadum (lift = 2.3) — condiment association.
+-  Vegetable samosa + Mini bhaji (lift = 2.7) — small appetizer pairing.
+  
+>👉 Use these as targeted add-on suggestions in digital menus — they occur rarely but show very strong relationships when they do appear. These niche associations may represent loyal customer habits.
 
 ## ➡️Next Step
 
